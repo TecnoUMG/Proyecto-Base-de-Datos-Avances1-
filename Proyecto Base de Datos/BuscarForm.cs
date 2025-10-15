@@ -16,5 +16,12 @@ namespace Proyecto_Base_de_Datos
         {
             InitializeComponent();
         }
+
+        private void buttonAtrasBUS_Click(object sender, EventArgs e)
+        {
+            OpcionesForm opcionesForm = new OpcionesForm();
+            opcionesForm.Show();
+            this.Hide();
+        }
     }
 }

@@ -45,7 +45,9 @@ namespace Proyecto_Base_de_Datos
 
         private void buttonAtras_Click(object sender, EventArgs e)
         {
-
+            OpcionesForm opcionesForm = new OpcionesForm();
+            opcionesForm.Show();
+            this.Hide();
         }
     }
 }

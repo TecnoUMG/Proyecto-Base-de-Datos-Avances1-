@@ -34,6 +34,10 @@
             txtBoxCodigoProductoB = new TextBox();
             buttonBuscar = new Button();
             buttonAtrasBUS = new Button();
+            lblinfoProductoNombre = new Label();
+            lblinfoCantidades = new Label();
+            lblinfoTipoServicio = new Label();
+            lblinfoProveedores = new Label();
             SuspendLayout();
             // 
             // panelLeft
@@ -91,12 +95,53 @@
             buttonAtrasBUS.TabIndex = 10;
             buttonAtrasBUS.Text = "Atras";
             buttonAtrasBUS.UseVisualStyleBackColor = true;
+            buttonAtrasBUS.Click += buttonAtrasBUS_Click;
+            // 
+            // lblinfoProductoNombre
+            // 
+            lblinfoProductoNombre.AutoSize = true;
+            lblinfoProductoNombre.Location = new Point(221, 230);
+            lblinfoProductoNombre.Name = "lblinfoProductoNombre";
+            lblinfoProductoNombre.Size = new Size(15, 20);
+            lblinfoProductoNombre.TabIndex = 11;
+            lblinfoProductoNombre.Text = "..";
+            // 
+            // lblinfoCantidades
+            // 
+            lblinfoCantidades.AutoSize = true;
+            lblinfoCantidades.Location = new Point(221, 266);
+            lblinfoCantidades.Name = "lblinfoCantidades";
+            lblinfoCantidades.Size = new Size(15, 20);
+            lblinfoCantidades.TabIndex = 12;
+            lblinfoCantidades.Text = "..";
+            // 
+            // lblinfoTipoServicio
+            // 
+            lblinfoTipoServicio.AutoSize = true;
+            lblinfoTipoServicio.Location = new Point(221, 335);
+            lblinfoTipoServicio.Name = "lblinfoTipoServicio";
+            lblinfoTipoServicio.Size = new Size(15, 20);
+            lblinfoTipoServicio.TabIndex = 13;
+            lblinfoTipoServicio.Text = "..";
+            // 
+            // lblinfoProveedores
+            // 
+            lblinfoProveedores.AutoSize = true;
+            lblinfoProveedores.Location = new Point(221, 305);
+            lblinfoProveedores.Name = "lblinfoProveedores";
+            lblinfoProveedores.Size = new Size(15, 20);
+            lblinfoProveedores.TabIndex = 14;
+            lblinfoProveedores.Text = "..";
             // 
             // BuscarForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblinfoProveedores);
+            Controls.Add(lblinfoTipoServicio);
+            Controls.Add(lblinfoCantidades);
+            Controls.Add(lblinfoProductoNombre);
             Controls.Add(buttonAtrasBUS);
             Controls.Add(buttonBuscar);
             Controls.Add(lblCodigoProductoB);
@@ -117,5 +162,9 @@
         private TextBox txtBoxCodigoProductoB;
         private Button buttonBuscar;
         private Button buttonAtrasBUS;
+        private Label lblinfoProductoNombre;
+        private Label lblinfoCantidades;
+        private Label lblinfoTipoServicio;
+        private Label lblinfoProveedores;
     }
 }

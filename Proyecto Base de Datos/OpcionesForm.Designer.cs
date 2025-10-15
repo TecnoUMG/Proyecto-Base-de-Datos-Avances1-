@@ -95,8 +95,8 @@ namespace Proyecto_Base_de_Datos
 
         private void buttonAtrasOP_Click(object sender, EventArgs e)
         {
-            OpcionesForm opcionesForm = new OpcionesForm();
-            opcionesForm.Show();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
             this.Hide();
         }
 
