@@ -153,7 +153,7 @@
             ResumeLayout(false);
             PerformLayout();
         }
-
+        //
         #endregion
 
         private Panel panelLeft;
